@@ -31,13 +31,11 @@ void calcular(float numUno,float numDos)
         case 1:
             numUno = pedirNum("\nIngrese primer numero\n");
             flagNumUno = 1;
-            resultadoFuno = 0;
             flagTres = 0;
             break;
         case 2:
             numDos = pedirNum("\nIngrese segundo numero\n");
             flagNumDos = 1;
-            resultadoFuno = 0;
             flagTres = 0;
             break;
             if(flagNumUno == 1 && flagNumDos == 1)
@@ -72,7 +70,7 @@ void calcular(float numUno,float numDos)
                         printf("\nNo es posible dividir por cero");
                     }
 
-                    if(numUno >= 0 || numDos >= 0)
+                    if(numUno >= 0 && numDos >= 0)
                     {
                     printf("\nEl factorial de %.2f es %f y el factorial de %.2f es %f\n",numUno,resultadoFuno,numDos,resultadoFdos);
                     }
@@ -124,7 +122,7 @@ float dividir(float numUno, float numDos)
 {
     return numUno / numDos;
 }
-float factorialUno(float numUno)
+float factorialUno(long numUno)
 {
     float factorialA;
     factorialA = 1;

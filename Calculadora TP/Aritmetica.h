@@ -52,7 +52,7 @@ float dividir(float numUno, float numDos);
  * \return float
  *
  */
-float factorialUno(float numUno);
+float factorialUno(long numUno);
 /** \brief Realiza la operacion del segundo numero
  *
  * \param numDos float Segundo numero al cual se le aplicara la funcion factorial

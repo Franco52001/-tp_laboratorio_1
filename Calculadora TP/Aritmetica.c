@@ -19,6 +19,7 @@ void calcular(float numUno,float numDos)
     int flag = 0;
     int flagNumUno = 0;
     int flagNumDos = 0;
+    int flagTres = 0;
 
 
     while(flag == 0)
@@ -31,12 +32,13 @@ void calcular(float numUno,float numDos)
             numUno = pedirNum("\nIngrese primer numero\n");
             flagNumUno = 1;
             resultadoFuno = 0;
-
+            flagTres = 0;
             break;
         case 2:
             numDos = pedirNum("\nIngrese segundo numero\n");
             flagNumDos = 1;
             resultadoFuno = 0;
+            flagTres = 0;
             break;
             if(flagNumUno == 1 && flagNumDos == 1)
             {
@@ -49,20 +51,19 @@ void calcular(float numUno,float numDos)
                 resultadoD = dividir(numUno, numDos);
                 resultadoFuno = factorialUno(numUno);
                 resultadoFdos = factorialDos(numDos);
-
+                flagTres = 1;
                 break;
-
             }
 
         case 4:
             if(flagNumUno == 1 && flagNumDos == 1)
             {
-                if(resultadoFuno !=0)
+                if(flagTres !=0)
                 {
                     printf("La suma entre %.2f y %.2f da: %.2f ",numUno,numDos,resultadoS);
                     printf("\nLa resta entre %.2f y %.2f da: %.2f ",numUno,numDos,resultadoR);
                     printf("\nLa multiplicacion entre %.2f y %.2f da: %.2f ",numUno,numDos,resultadoM);
-                    if(numDos !=0)
+                    if(numDos != 0)
                     {
                         printf("\nLa division entre %.2f y %.2f da: %.2f ",numUno,numDos,resultadoD);
                     }
@@ -70,11 +71,19 @@ void calcular(float numUno,float numDos)
                     {
                         printf("\nNo es posible dividir por cero");
                     }
+
+                    if(numUno >= 0 || numDos >= 0)
+                    {
                     printf("\nEl factorial de %.2f es %f y el factorial de %.2f es %f\n",numUno,resultadoFuno,numDos,resultadoFdos);
+                    }
+                    else
+                    {
+                        printf("\nNo existe el factorial de numeros negativos\n");
+                    }
                 }
                 else
                 {
-                    printf("No se realizaron las operaciones con los nuevos numeros ingresados");
+                    printf("\nNo se realizaron las operaciones con los nuevos numeros ingresados\n");
                 }
             }
             else if(flagNumUno != 1 || flagNumDos != 1)

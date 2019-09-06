@@ -122,7 +122,7 @@ float dividir(float numUno, float numDos)
 {
     return numUno / numDos;
 }
-float factorialUno(long numUno)
+float factorialUno(float numUno)
 {
     float factorialA;
     factorialA = 1;

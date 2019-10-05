@@ -60,5 +60,3 @@ float factorialUno(float numUno);
  *
  */
 float factorialDos(float numDos);
-
-

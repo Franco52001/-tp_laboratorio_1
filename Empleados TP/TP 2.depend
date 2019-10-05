@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1570238799 source:c:\users\franco\desktop\programacion\codigo c\tp 2\biblioteca.c
+	"Biblioteca.h"
+
+1570239179 c:\users\franco\desktop\programacion\codigo c\tp 2\biblioteca.h
+	<stdio.h>
+	<string.h>
+
+1570239421 source:c:\users\franco\desktop\programacion\codigo c\tp 2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Biblioteca.h"
+

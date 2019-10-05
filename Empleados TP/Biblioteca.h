@@ -21,14 +21,12 @@ typedef struct
  *
  */
 int initEmployees(sEmployee*,int);
-
 /** \brief Pide los datos de un empleado y se los asigna al array
  *
  * \return sEmployee Retorna los datos al array
  *
  */
 sEmployee addEmployee();
-
 /** \brief Pide los datos de todos los empleados por medio de un for
  *
  * \param sEmployee* Puntero del array de empleados
@@ -38,7 +36,6 @@ sEmployee addEmployee();
  *
  */
 int addEmployees(sEmployee*,int len,int numberId);
-
 /** \brief Busca a un empleado en base a su ID
  *
  * \param sEmployee* Puntero del array de empleados
@@ -48,7 +45,6 @@ int addEmployees(sEmployee*,int len,int numberId);
  *
  */
 int findEmployeeById(sEmployee*,int len,int numberId);
-
 /** \brief Permitira remover un empleado del array
  *
  * \param sEmployee*  Puntero del array de empleados
@@ -57,7 +53,6 @@ int findEmployeeById(sEmployee*,int len,int numberId);
  *
  */
 int removeEmployee(sEmployee*,int len);
-
 /** \brief Permitira modificar los datos de un empleado
  *
  * \param sEmployee* Puntero del array de empleados
@@ -66,7 +61,6 @@ int removeEmployee(sEmployee*,int len);
  *
  */
 int modEmployee(sEmployee*,int len);
-
 /** \brief Ordenara los empleados por sector y a los empleados del mismo sector los ordenara por apellido
  *
  * \param sEmployee* Puntero del array de empleados
@@ -91,7 +85,6 @@ void printEmployee(sEmployee);
  *
  */
 int printEmployees(sEmployee*,int len);
-
 /** \brief  Se asegura de que haya espacio disponible en el array
  *
  * \param sEmployee* Puntero del array de empleados
@@ -100,7 +93,6 @@ int printEmployees(sEmployee*,int len);
  *
  */
 int searchFree(sEmployee*,int len);
-
 /** \brief Funcion que agiliza el testeo mediante el ingreso automatico de datos predefinidos
  *
  * \param sEmployee* Puntero del array de empleados
@@ -154,6 +146,3 @@ float average(sEmployee*,int);
  *
  */
 int overAverage(sEmployee*,int);
-
-
-
